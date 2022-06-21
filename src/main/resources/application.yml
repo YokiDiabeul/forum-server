@@ -1,0 +1,14 @@
+server:
+  port: 9000
+  servlet:
+    context-path: "/v2"
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/forum"
+    username: "postgres"
+    password: "1234"
